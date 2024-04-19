@@ -1,57 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif; font-size: 18px;}
+* {box-sizing: border-box;}
 
-    <style>
-        header {
-            background-color: #34568b;
-            height: 11vh;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
 
-        header div {
-            margin-right: 40px;
-        }
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-        header a {
-            text-decoration: none; 
-            color: white; 
-            font-size: 18px; 
-            margin-right: 10px; 
-        }
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-        h1 {
-            font-size: 38px;
-            margin-left: 40px; 
-            margin-top: 150px;
-        }
+.container {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
 
-        p {
-            font-size: 18px;
-            margin-left: 40px; 
-        }
-    </style>
+.contact-info {
+  float: left;
+  width: 30%;
+  margin-right: 5%; 
+}
+
+.contact-form {
+  float: right;
+  width: 40%;
+  margin-right: 10%;
+}
+
+.header {
+  background-color: #34568b;
+  height: 11vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Times New Roman, Times, serif; /* Set font family to Times New Roman */
+}
+
+.header div {
+  margin-right: 40px;
+}
+
+.header a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px; 
+    margin-right: 10px; 
+}
+
+</style>
 </head>
 <body>
-<header>
-    <div><a href="homepage.html">Home</a></div>
-    <div><a href="about.html">About</a></div>
-    <div><a href="portfolio.html">Portfolio</a></div>
-    <div><a href="contact.html">Contact</a></div>
-</header>
 
-<ul>
-<li>Basketball</li>
-<li>Playing Drums</li>
-<li>Listening to Music</li>
-</ul>
+<div class="header">
+  <div><a href="homepage.html">Home</a></div>
+  <div><a href="about.html">About</a></div>
+  <div><a href="portfolio.html">Portfolio</a></div>
+  <div><a href="contact.html">Contact</a></div>
+</div>
 
+<div class="container">
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <ul>
+      <li><strong>Facebook:</strong> <a href="https://www.facebook.com/jefferson.aseron">My Facebook Profile</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jeff_04198/">My Instagram Profile</a></li>
+      <li><strong>Phone:</strong> +1234567890</li>
+      <li><strong>Email:</strong> yourname@example.com</li>
+    </ul>
+  </div>
+
+  <div class="contact-form">
+    <h3>Contact Form</h3>
+    <form action="just_a_sample">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Philippines</option>
+        <option value="canada">USA</option>
+        <option value="usa">Australia</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div style="clear:both;"></div>
+</div>
 
 </body>
-
 </html>
+
