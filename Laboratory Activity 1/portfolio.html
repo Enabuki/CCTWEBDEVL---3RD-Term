@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>My Portfolio</title>
 
     <style>
         header {
@@ -28,12 +28,36 @@
         h1 {
             font-size: 38px;
             margin-left: 40px; 
-            margin-top: 150px;
+            margin-top: 40px;
         }
 
         p {
             font-size: 18px;
             margin-left: 40px; 
+        }
+        
+        .experience {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            margin-top: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 0;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
@@ -45,13 +69,27 @@
     <div><a href="contact.html">Contact</a></div>
 </header>
 
-<ul>
-<li>Basketball</li>
-<li>Playing Drums</li>
-<li>Listening to Music</li>
-</ul>
+<h1>My Portfolio</h1>
 
+<hr>
+
+<div class="experience">
+    <div class="experience-item">
+        <h3>Java Development</h3>
+        <p>Extensive experience in Java programming, including object-oriented design, multithreading, and JavaFX GUI development.</p>
+    </div>
+    
+    <div class="experience-item">
+        <h3>Website Development</h3>
+        <p>Proficient in HTML, CSS, and JavaScript for front-end development. </p>
+    </div>
+    
+    <div class="experience-item">
+        <h3>Database Management</h3>
+        <p>Hands-on experience in designing and managing relational databases using MSSQL. Familiar with database optimization techniques and data modeling.</p>
+    </div>
+</div>
 
 </body>
-
 </html>
+
